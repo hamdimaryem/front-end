@@ -75,12 +75,13 @@
         window.location.href = 'supprime.component.html'; // Redirection vers l'interface de suppression
       } else if (route === 'ajouter') {
         window.location.href = 'fleuriste.component.html'; // Redirection vers l'interface fleuriste
-      } else {
-        // Redirection vers la modife
-        // Code de redirection à implémenter selon votre application Angular
-        console.log("Redirection vers " + route);
-      }
+      } else if (route === 'modifier') { // Corrected spelling to 'modifier'
+      window.location.href = 'modify.component.html'; // Redirection vers l'interface modifier
+    } else {
+      console.log("Redirection vers " + route);
     }
+      }
+    
   </script>
 </body>
 </html>

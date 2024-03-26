@@ -47,12 +47,12 @@ export class FleuristeComponent {
     this.fleuristeAjoute = true;
 
     // Redirection vers la page de confirmation avec les données du nouveau fleuriste
-    this.router.navigate(['/confirmation'], { state: { nouveauFleuriste } });
+   // this.router.navigate(['/confirmation'], { state: { nouveauFleuriste } });
 
-    // Réinitialiser fleuristeAjoute après 3 secondes
+    // Réinitialiser fleuristeAjoute après 6 secondes
     setTimeout(() => {
       this.fleuristeAjoute = false;
-    }, 3000);
+    }, 60000);
   }
 
   resetForm() {

@@ -19,19 +19,19 @@ interface Fleuriste {
 })
 export class FleuristeComponent {
   fleuristes: Fleuriste[] = [];
-  idSuppression: number;
-  nomSuppression: string;
+  idmodify: number;
+  nommodify: string;
 
   constructor() { }
 
   supprimerFleuriste() {
     const index =-1;
-    const index = this.fleuristes.findIndex(f => f.id === this.idSuppression && f.nom === this.nomSuppression);
+    const index = this.fleuristes.findIndex(f => f.id === this.idmodify && f.nom === this.nommodify);
     if (index !== -1) {
       this.fleuristes.splice(index, 1);
-      alert("Fleuriste supprimé avec succès.");
-      this.idSuppression = null;
-      this.nomSuppression = '';
+      alert("on a trouvè le prestataire");
+      this.idmodify = null;
+      this.nommodify = '';
     } else {
       alert("Fleuriste non trouvé. Vérifiez l'ID et le nom.");
     }

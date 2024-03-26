@@ -106,7 +106,7 @@
         <!-- Ajoutez d'autres cases à cocher pour d'autres services si nécessaire -->
         <input type="file" (change)="onFileSelected($event)" accept=".jpg" required>
         <button (click)="ajouterEtRediriger()">Confirmer</button>
-        <button (click)="request()">Request</button>
+        <button (click)="request()">annuler</button>
     </form>
     <div *ngIf="fleuristeAjoute" class="success-message">
         <h2>Informations saisies :</h2>
